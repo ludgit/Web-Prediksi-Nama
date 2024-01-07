@@ -1,10 +1,10 @@
 console.log('Halo')
 
-const base_api = "https://api.genderize.io";
+const base_api = "https://genderapi.io/api";
 
 function showResult(name, gender, probability) {
     const predictionElement = document.getElementById("prediction")
-    let probabilityPercentage = probability * 100;
+    let probabilityPercentage = probability;
     let ubahGender;
     if(gender == "male") {
         ubahGender = "Laki-Laki"
