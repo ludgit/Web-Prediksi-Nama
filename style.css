@@ -1,0 +1,50 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(128, 204, 234);
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
+}
+
+
+
+html {
+    font-family: sans-serif;
+    /* background: rgb(34,86,195);
+background: linear-gradient(0deg, rgba(34,86,195,1) 0%, rgba(45,253,237,1) 100%); */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 1000px;
+    text-align: center;
+    padding: 10px 0;
+    /* background-color: skyblue; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+    gap: 5px;
+    width: 500px;
+}
+.container label {
+    font-size: 18px;
+    font-weight: 1000px;
+}
+.container input {
+    border: none;
+    border-bottom: 1px groove black;
+    padding: 8px 4px;
+    text-align: center;
+    color: black;
+}
