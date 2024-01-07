@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Made By Lud Dev.">
     <title>Web Prediksi Gender</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">Prediksi Gender Berdasarkan Nama Depan</h1>
     <main>
+        <h1 class="title">Prediksi Gender Berdasarkan Nama Depan</h1>
         <div class="container">
             <label>Masukkan Nama Depan</label>
             <input placeholder="Contoh : Luddin" onkeydown="predict(event)"/>
+            <button  class="submit" onclick="predict(event)">Submit</button>
+            <div id="loading" class="loading"></div>
             <div id="prediction"></div>
         </div>
     </main>
