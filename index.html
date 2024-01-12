@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1 class="title">Prediksi Gender Berdasarkan Nama Depan</h1>
-        <div class="container">
-            <label>Masukkan Nama Depan</label>
-            <input placeholder="Contoh : Luddin" onkeydown="predict(event)"/>
-            <button  class="submit" onclick="predict(event)">Submit</button>
+    <h1 class="title">Prediksi Gender Berdasarkan Nama Depan</h1>
+    <div class="all-all">
+        <main>
+            <img src="male1.jpg" alt="male" id="male" class="genders">
+            <img src="female1.jpg" alt="female" id="female" class="genders">
+            <div class="container">
+                <label>Masukkan Nama Depan</label>
+                <input placeholder="Contoh : Luddin" onkeydown="predict(event)" class="input"/>
+                <button  class="bn632-hover bn18" onclick="predict(event)">Submit</button>
             <div id="loading" class="loading"></div>
             <div id="prediction"></div>
         </div>
     </main>
+</div>
+<h1 class="title2">
+Hayyuk Mabar Brow
+</h1>
     <script src="main.js"></script>
 </body>
 </html>
