@@ -15,10 +15,14 @@ function showResult(name, gender, probability) {
         ubahGender = "Laki-Laki";
         genderMale.style.display = 'inline'
         genderFemale.style.display = 'none'
-    } else {
+    } else if (gender == "female") {
         ubahGender = "Perempuan";
         genderMale.style.display = 'none'
         genderFemale.style.display = 'inline'
+    }else{
+        genderMale.style.display = 'none'
+        genderFemale.style.display = 'none'
+        predictionElement.innerHTML = "<strong>Error 404</strong>"
     }
 
 
@@ -63,3 +67,46 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function updateTime() {
+    const now = new Date();
+    const daysOfWeek = [
+        'Minggu',
+        'Senin',
+        'Selasa',
+        'Rabu',
+        'Kamis',
+        'Jumat',
+        'Sabtu'
+    ];
+    
+    const months = [
+        'Januari',
+        'Februari',
+        'Maret',
+        'April',
+        'Mei',
+        'Juni',
+        'Juli',
+        'Agustus',
+        'September',
+        'Oktober',
+        'November',
+        'Desember'
+    ];
+    
+    const dayOfWeek = daysOfWeek[now.getDay()];
+    const dayOfMonth = now.getDate().toString().padStart(2, '0');
+    const month = months[now.getMonth()].toString().padStart(2, '0'); // Menambah 1 karena indeks bulan dimulai dari 0
+    const year = now.getFullYear();
+
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    const timeString = `Sekarang Hari ${dayOfWeek}, ${dayOfMonth}/${month}/${year},  Pukul : ${hours}:${minutes}:${seconds}`;
+    document.getElementById('time').textContent = timeString;
+}
+
+setInterval(updateTime, 1000); // Update every second
+updateTime(); // Initial call to display time immediately

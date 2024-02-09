@@ -89,11 +89,48 @@ main {
     -webkit-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
     -moz-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
     box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
+    fill-rule: aquamarine;
 }
 
 .container:hover {
     background-color: #66e9be;
+    #time {
+        background-color: #66e9be;
+    }
+    /* animation: myAnim 2s ease-in-out 1s 1 normal none; */
 }
+
+/* @keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+} */
 
 .container label {
     font-size: 18px;
@@ -225,9 +262,9 @@ main {
     -o-border-radius: 20px;
     border-radius: 20px;
     border: 1px solid black;
-    -webkit-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
-    -moz-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
-    box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.58);
+    -webkit-box-shadow:0px 0px 47px 6px rgba(45,255,196,0.65);
+    -moz-box-shadow: 0px 0px 47px 6px rgba(45,255,196,0.65);
+    box-shadow: 0px 0px 47px 6px rgba(45,255,196,0.65);
 }
 
 .all-all {
@@ -235,4 +272,43 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.clock-label {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    border-bottom: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: -5px;
+}
+
+#time {
+    border-top: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+    height:45px;
+    border: 1px solid black;
+    /*background: #e0e0e0;
+    */box-shadow: inset 24px 24px 47px rgb(4, 243, 163),            inset -24px -24px 47px rgb(137, 255, 216);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
 }
